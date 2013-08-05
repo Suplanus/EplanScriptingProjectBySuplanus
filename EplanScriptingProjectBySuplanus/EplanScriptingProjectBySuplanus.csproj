@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A9614B9-AC0D-47E6-8D95-BEC617BE079F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EplanScriptingProjectBySuplanus</RootNamespace>
+    <AssemblyName>EPLAN-SCRIPTCONTAINER 2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eplan.EplApi.AFu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=57aaa27e22f7b107, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\EPLAN\Platform\2.1.6\Bin\Eplan.EplApi.AFu.dll</HintPath>
+    </Reference>
+    <Reference Include="Eplan.EplApi.Baseu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=57aaa27e22f7b107, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\EPLAN\Platform\2.1.6\Bin\Eplan.EplApi.Baseu.dll</HintPath>
+    </Reference>
+    <Reference Include="Eplan.EplApi.Guiu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=57aaa27e22f7b107, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\EPLAN\Platform\2.1.6\Bin\Eplan.EplApi.Guiu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomaticGeneratingConnections\AutomaticGeneratingConnections.cs" />
+    <Compile Include="BackupOnClosingProject\BackupOnClosingProject.cs" />
+    <Compile Include="ChangePLCMnemonics\ChangePLCMnemonics.cs" />
+    <Compile Include="CustomPropertyEditor\CustomPropertyEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicMenu\DynamicMenu.cs" />
+    <Compile Include="ElevatorScript\ElevatorScript.cs" />
+    <Compile Include="Eventlogger\Eventlogger.cs" />
+    <Compile Include="ExecuteEplanAction\ExecuteEplanAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedSettings\ExtendedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetProjectProperty\GetProjectProperty.cs" />
+    <Compile Include="InsertPageMacro\InsertPageMacro.cs" />
+    <Compile Include="InterruptionPointConfigurator\InterruptionPointConfigurator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadUnloadAllScripts\LoadUnloadAllScripts.cs" />
+    <Compile Include="MacrosInstallationSpaceContextMenu\MacrosInstallationSpaceContextMenu.cs" />
+    <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Get.cs" />
+    <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Set.cs" />
+    <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Settings.cs" />
+    <Compile Include="OpenProjectAndSetPartsDb\OpenProjectAndSetPartsDb.cs" />
+    <Compile Include="PageChangeZoomAll\PageChangeZoomAll.cs" />
+    <Compile Include="PagePdf\PagePdf.cs" />
+    <Compile Include="PrintPages\PrintPages.cs" />
+    <Compile Include="ProjectHistory\ProjectHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickprintContextMenu\QuickprintContextMenu.cs" />
+    <Compile Include="SelectLanguage\SelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLanguage\SelectLanguage_UsingExample.cs" />
+    <Compile Include="SetCursorColor\SetCursorColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetLanguageGui\SetLanguageGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetMacroBoxName\SetMacroBoxName.cs" />
+    <Compile Include="SetSetting\SetSettingExamplePath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetSetting\SetSettingExampleWindowLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetSetting\SetSettingString.cs" />
+    <Compile Include="SetUserPaths\SetUserPaths.cs" />
+    <Compile Include="SwapMacroFromMacroBox\SwapMacroFromMacroBox.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Bookmarks\Documentation\Bookmarks Doku.pdf" />
+    <None Include="InsertUniversalPart3D\Macros\Artikelplatzierung_%283D%29.ema" />
+    <None Include="InsertUniversalPart3D\Macros\Schrankbauteil_%283D%29.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\1pol-ganz.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\1pol-links.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\1pol-rechts.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\1pol.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\2pol-ganz.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\2pol-links.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\2pol-rechts.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\2pol.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\3pol-ganz.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\3pol-links.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\3pol-rechts.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\3pol.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\4pol-ganz.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\4pol-links.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\4pol-rechts.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\4pol.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\5pol-ganz.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\5pol-links.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\5pol-rechts.ema" />
+    <None Include="InterruptionPointConfigurator\Macros\5pol.ema" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AutoObjectSnapOnConstructionMode\AutoObjectSnapOnConstructionMode.vb" />
+    <Content Include="Bookmarks\Bookmarks.vb" />
+    <Content Include="Bookmarks\Bookmarks_Einstellungen löschen.vb" />
+    <Content Include="Bookmarks\Toolbar\Bookmarks_Icon1.jpg" />
+    <Content Include="Bookmarks\Toolbar\Bookmarks_Icon_Down.png" />
+    <Content Include="Bookmarks\Toolbar\Bookmarks_Icon_Prj.jpg" />
+    <Content Include="Bookmarks\Toolbar\Bookmarks_Icon_Up.png" />
+    <Content Include="CompressPartsDatabase\CompressPartsDatabase.vb" />
+    <Content Include="CorrectCableNavigator\CorrectCableNavigator.vb" />
+    <Content Include="CorrectConnectionNavigator\CorrectConnectionNavigator.vb" />
+    <Content Include="CorrectPlugNavigator\CorrectPlugNavigator.vb" />
+    <Content Include="CorrectTerminalNavigator\CorrectTerminalNavigator.vb" />
+    <Content Include="CorrectTerminalsInNavigator\CorrectTerminalsInNavigator.vb" />
+    <Content Include="CustomPropertyEditor\Example\10013.0.false.txt" />
+    <Content Include="CustomPropertyEditor\Example\10014.0.true.txt" />
+    <Content Include="ElkExportToDwg\ElkExportToDwg.vb" />
+    <Content Include="PlcNavigatorReadressMenu\PlcNavigatorReadressMenu.vb" />
+    <Content Include="SetMacroBoxName\Toolbar\ema.jpg" />
+    <Content Include="SetMacroBoxName\Toolbar\ems.jpg" />
+    <Content Include="SetMacroBoxName\Toolbar\SetMacroBox.xml" />
+    <Content Include="SettingsRemoveSelection\SettingsRemoveSelection.vb" />
+    <Content Include="UpdateMacro\UpdateMacro.vb" />
+    <Content Include="Watermark\Watermark.vb" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

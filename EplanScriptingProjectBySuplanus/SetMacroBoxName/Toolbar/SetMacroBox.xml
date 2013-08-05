@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+ <CAT name="COMPANY"/>
+ <CAT name="INSTALL"/>
+ <CAT name="PROJECT"/>
+ <CAT name="STATION"/>
+ <CAT name="USER">
+  <MOD name="TOOLBARS">
+   <LEV1 name="TOOLBAR-0">
+    <LEV2 name="AdditionalToolbars">
+     <LEV3 name="AdditionalToolbar-0">
+      <Setting name="Action" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>SetMacroBoxName /EXTENSION:&quot;.ema&quot; /GETNAMEFROMLEVEL:&quot;2|4&quot;</Val>
+      </Setting>
+      <Setting name="ID" ver="1" type="unsigned int">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>48157</Val>
+      </Setting>
+      <Setting name="PictureFile" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>$(MD_IMG)\Toolbar\ema.jpg</Val>
+      </Setting>
+      <Setting name="Tooltip" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>Makrokasten: Fenstermakroname setzen</Val>
+      </Setting>
+     </LEV3>
+     <LEV3 name="AdditionalToolbar-1">
+      <Setting name="Action" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>SetMacroBoxName /EXTENSION:&quot;.ems&quot; /GETNAMEFROMLEVEL:&quot;2|4&quot;</Val>
+      </Setting>
+      <Setting name="ID" ver="1" type="unsigned int">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>48158</Val>
+      </Setting>
+      <Setting name="PictureFile" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>$(MD_IMG)\Toolbar\ems.jpg</Val>
+      </Setting>
+      <Setting name="Tooltip" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>Makrokasten: Symbolmakroname setzen</Val>
+      </Setting>
+     </LEV3>
+    </LEV2>
+    <LEV2 name="BARDATA">
+     <LEV3 name="ToolBarInfoEx">
+      <Setting name="Buttons" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>NBMLAAAAAAOBMLAAAAAA</Val>
+      </Setting>
+      <Setting name="Title" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>SetMacroBox</Val>
+      </Setting>
+     </LEV3>
+    </LEV2>
+   </LEV1>
+  </MOD>
+ </CAT>
+</Settings>

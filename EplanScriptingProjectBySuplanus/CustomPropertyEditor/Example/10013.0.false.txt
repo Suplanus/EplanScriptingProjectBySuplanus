@@ -1,0 +1,2 @@
+Wert 1	Beschreibung 1
+Wert 2	Beschreibung 2
