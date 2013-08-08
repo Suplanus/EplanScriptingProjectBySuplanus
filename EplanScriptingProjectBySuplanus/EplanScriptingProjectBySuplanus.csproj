@@ -57,6 +57,7 @@
     <Compile Include="AutomaticGeneratingConnections\AutomaticGeneratingConnections.cs" />
     <Compile Include="BackupOnClosingProject\BackupOnClosingProject.cs" />
     <Compile Include="ChangePLCMnemonics\ChangePLCMnemonics.cs" />
+    <Compile Include="CopyMode\CopyMode.cs" />
     <Compile Include="CustomPropertyEditor\CustomPropertyEditor.cs">
       <SubType>Form</SubType>
     </Compile>
