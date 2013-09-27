@@ -61,6 +61,9 @@
     <Compile Include="CustomPropertyEditor\CustomPropertyEditor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DeciderDisplayEnable\DeciderDisplayEnable.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DynamicMenu\DynamicMenu.cs" />
     <Compile Include="ElevatorScript\ElevatorScript.cs" />
     <Compile Include="Eventlogger\Eventlogger.cs" />
