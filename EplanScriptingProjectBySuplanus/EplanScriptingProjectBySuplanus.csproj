@@ -86,6 +86,9 @@
     <Compile Include="OpenProjectAndSetPartsDb\OpenProjectAndSetPartsDb.cs" />
     <Compile Include="PageChangeZoomAll\PageChangeZoomAll.cs" />
     <Compile Include="PagePdf\PagePdf.cs" />
+    <Compile Include="PdfExportAssistent\PdfExportAssistent.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PrintPages\PrintPages.cs" />
     <Compile Include="ProjectHistory\ProjectHistory.cs">
       <SubType>Form</SubType>
