@@ -115,6 +115,9 @@
     <Compile Include="SetSetting\SetSettingString.cs" />
     <Compile Include="SetUserPaths\SetUserPaths.cs" />
     <Compile Include="SwapMacroFromMacroBox\SwapMacroFromMacroBox.cs" />
+    <Compile Include="AddProjectLanguage\AddProjectLanguage.cs" />
+    <Compile Include="DeciderClass\DeciderClass.cs" />
+    <Compile Include="MultiLanguageString\MultiLanguageString.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
