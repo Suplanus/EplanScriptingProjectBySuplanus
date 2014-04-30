@@ -118,6 +118,7 @@
     <Compile Include="AddProjectLanguage\AddProjectLanguage.cs" />
     <Compile Include="DeciderClass\DeciderClass.cs" />
     <Compile Include="MultiLanguageString\MultiLanguageString.cs" />
+    <Compile Include="UpdateProjectProperties\UpdateProjectProperties.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
