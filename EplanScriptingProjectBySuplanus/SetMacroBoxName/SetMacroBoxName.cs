@@ -6,10 +6,9 @@
 // V3.1:	Straight-Potter	2012
 // V3.2:	FrankS			17.05.2013
 // Makrokastenname aus Seitenstruktur setzen
-using System.Collections;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.IO;
+using System.Windows.Forms;
+using Eplan.EplApi.ApplicationFramework;
+using Eplan.EplApi.Scripting;
 
 public class SetMacroBoxName
 {

@@ -1,33 +1,26 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Windows.Forms;
 using Eplan.EplApi.ApplicationFramework;
 using Eplan.EplApi.Base;
 using Eplan.EplApi.Scripting;
-using System;
-using System.IO;
-using System.Diagnostics;
 
 public class RegisterScriptMenu
 
 {
-    [Start]
-    [DeclareMenu()]
-    public void MenuFunction()
-    {
-        Eplan.EplApi.Gui.Menu aMenu = new Eplan.EplApi.Gui.Menu();
-        aMenu.AddMenuItem(	"alle Scripte laden",
+	[Start]
+	[DeclareMenu()]
+	public void MenuFunction()
+	{
+		Eplan.EplApi.Gui.Menu aMenu = new Eplan.EplApi.Gui.Menu();
+		aMenu.AddMenuItem(	"alle Scripte laden",
 							"LoadScripts",
 							"lädt alle Standard-Scripte",
 							System.UInt32.Parse("35226"), 	// Menü-ID von Dienstprogramme/Scripte/Ausführen
 							System.Int32.Parse("0"), 	// ID of the following menu. (0 for default)
 							false,
 							true);
-        Eplan.EplApi.Gui.Menu bMenu = new Eplan.EplApi.Gui.Menu();
-        bMenu.AddMenuItem(	"alle Scripte entladen",
+		Eplan.EplApi.Gui.Menu bMenu = new Eplan.EplApi.Gui.Menu();
+		bMenu.AddMenuItem(	"alle Scripte entladen",
 							"UnloadScripts",
 							"entlädt alle Standard-Scripte",
 							System.UInt32.Parse("35228"), 	// Menü-ID von Dienstprogramme/Scripte/Entladen
@@ -37,9 +30,9 @@ public class RegisterScriptMenu
 	}
 
 
-    [DeclareAction("LoadScripts")]	// Action für "alle Scripte laden" 	//Script lädt alle Scripte des eingestellten Ordners
-    public void LoadScriptsProject()
-    {
+	[DeclareAction("LoadScripts")]	// Action für "alle Scripte laden" 	//Script lädt alle Scripte des eingestellten Ordners
+	public void LoadScriptsProject()
+	{
 	string path = PathMap.SubstitutePath("$(MD_SCRIPTS)");
 	string message = "";
 	int i = 0;
@@ -53,7 +46,7 @@ public class RegisterScriptMenu
 			aca.AddParameter("ScriptFile", fileInfo.FullName);
 			oCLA.Execute("RegisterScript", aca);
 			
-			if (i > 0);
+			if (i > 0)
 			{
 			message += "\n";
 			}	
@@ -67,7 +60,7 @@ public class RegisterScriptMenu
 			aca.AddParameter("ScriptFile", fileInfo.FullName);
 			oCLA.Execute("RegisterScript", aca);
 			
-			if (i > 0);
+			if (i > 0)
 			{
 			message += "\n";
 			}	
@@ -77,9 +70,9 @@ public class RegisterScriptMenu
 		MessageBox.Show("folgende Scripte wurden erfolgreich geladen:" + "\n" + message, "Geladene Scripte", MessageBoxButtons.OK, MessageBoxIcon.Information);
 	}
 	
-    [DeclareAction("UnloadScripts")]	// Action für "alle Scripte entladen"
-    public void UnloadScriptsProject()
-    {	
+	[DeclareAction("UnloadScripts")]	// Action für "alle Scripte entladen"
+	public void UnloadScriptsProject()
+	{	
 	string path1 = PathMap.SubstitutePath("$(MD_SCRIPTS)");	
 	
 	System.IO.FileInfo[] fi = new System.IO.DirectoryInfo(path1).GetFiles("*.cs", SearchOption.AllDirectories); 

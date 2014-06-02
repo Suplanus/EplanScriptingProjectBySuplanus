@@ -1,4 +1,8 @@
 using System.IO;
+using System.Windows.Forms;
+using Eplan.EplApi.ApplicationFramework;
+using Eplan.EplApi.Scripting;
+
 public class OpenProjectAndSetPartsDb
 {
     [DeclareAction("OpenProjectAndSetPartsDb")]

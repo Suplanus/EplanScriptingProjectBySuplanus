@@ -7,10 +7,9 @@
 //
 using System.Windows.Forms;
 using Eplan.EplApi.ApplicationFramework;
-using Eplan.EplApi.Base;
 using Eplan.EplApi.Scripting;
 
-public class Class
+public class QuickprintContextMenu
 {
     [DeclareRegister]
     public void Register()

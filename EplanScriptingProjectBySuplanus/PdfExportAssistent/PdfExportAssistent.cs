@@ -15,10 +15,9 @@
 using System;
 using System.Windows.Forms;
 using System.Xml;
-using Eplan.EplApi.Scripting;
 using Eplan.EplApi.ApplicationFramework;
 using Eplan.EplApi.Base;
-using Eplan.EplApi.Gui;
+using Eplan.EplApi.Scripting;
 
 public partial class frmPDFAssistent : System.Windows.Forms.Form
 {
@@ -224,12 +223,12 @@ public partial class frmPDFAssistent : System.Windows.Forms.Form
 			// 
 			this.cboAusgabeNach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cboAusgabeNach.Items.AddRange(new object[] {
-            "in den Projekt-Ordner",
-            "Ausgabeverzeichnis aus Einstellungen: PDF-Export",
-            "in den Ordner eine Ebene über dem Projekt-Ordner",
-            "in Ordner \"Eigene Dateien\"",
-            "auf den Desktop",
-            "gleicher Pfad wie Projekt nur auf anderes Laufwerk"});
+			"in den Projekt-Ordner",
+			"Ausgabeverzeichnis aus Einstellungen: PDF-Export",
+			"in den Ordner eine Ebene über dem Projekt-Ordner",
+			"in Ordner \"Eigene Dateien\"",
+			"auf den Desktop",
+			"gleicher Pfad wie Projekt nur auf anderes Laufwerk"});
 			this.cboAusgabeNach.Location = new System.Drawing.Point(96, 17);
 			this.cboAusgabeNach.Name = "cboAusgabeNach";
 			this.cboAusgabeNach.Size = new System.Drawing.Size(376, 21);
@@ -570,8 +569,8 @@ public partial class frmPDFAssistent : System.Windows.Forms.Form
 	private void cboAusgabeNach_SelectedIndexChanged(object sender, EventArgs e)
 	{
 #if !DEBUG
-        string sProjektOrdner = PathMap.SubstitutePath("$(PROJECTPATH)");
-        string sDateiName = PathMap.SubstitutePath("$(PROJECTNAME)");
+		string sProjektOrdner = PathMap.SubstitutePath("$(PROJECTPATH)");
+		string sDateiName = PathMap.SubstitutePath("$(PROJECTNAME)");
 #else
 		string sProjektOrdner = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 		string sDateiName = "TEST";

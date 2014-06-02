@@ -120,9 +120,9 @@ public class SetSettingExampleWindowLocation : System.Windows.Forms.Form
                     );
                 Refresh();
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
     }
@@ -134,9 +134,9 @@ public class SetSettingExampleWindowLocation : System.Windows.Forms.Form
             oSettings.SetStringSetting(SettingPathWindowLocation, this.Location.X.ToString(), 0);
             oSettings.SetStringSetting(SettingPathWindowLocation, this.Location.Y.ToString(), 1);
         }
-        catch (System.Exception ex)
+        catch (Exception ex)
         {
-            //MessageBox.Show(ex.Message);
+            MessageBox.Show(ex.Message);
         }
     }
 

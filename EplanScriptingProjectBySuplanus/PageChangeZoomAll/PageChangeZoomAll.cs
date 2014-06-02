@@ -1,3 +1,6 @@
+using Eplan.EplApi.ApplicationFramework;
+using Eplan.EplApi.Scripting;
+
 public class PageChangeZoomAll
 // *********************************************************************************
 // Funktion: Ansicht "Ausschnitt ganze Seite" bei Seitenwechsel 

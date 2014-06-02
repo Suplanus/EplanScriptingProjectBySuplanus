@@ -3,7 +3,7 @@ using System.Xml;
 using Eplan.EplApi.Base;
 using Eplan.EplApi.Scripting;
 
-public class Class
+public class GetProjectProperty
 {
     [DeclareAction("GetProjectProperty")]
     public void Function(int ID)

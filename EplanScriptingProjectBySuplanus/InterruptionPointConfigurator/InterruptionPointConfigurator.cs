@@ -15,14 +15,11 @@
 //	ePlanus.de - Scripting in Eplan ist einfach (toll)
 //////////////////////////////////////////////////////////////////////////////////
 
-using System.Collections.Generic;
-using System.Text;
-using Eplan.EplApi.Gui;
 using System.IO;
-using System.Collections;
-using System.Diagnostics;
-using System.Globalization;
-using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using Eplan.EplApi.ApplicationFramework;
+using Eplan.EplApi.Base;
+using Eplan.EplApi.Scripting;
 
 public class FrmAbbruchstellen : System.Windows.Forms.Form
 
@@ -34,7 +31,6 @@ public class FrmAbbruchstellen : System.Windows.Forms.Form
     }
     private System.Windows.Forms.Button btnCancel;
     private System.Windows.Forms.ToolStripStatusLabel lblStatus2;
-    private System.Windows.Forms.Label label2;
     private System.Windows.Forms.TextBox txtV1;
     private System.Windows.Forms.ListBox lbV13;
     private System.Windows.Forms.ListBox lbV12;

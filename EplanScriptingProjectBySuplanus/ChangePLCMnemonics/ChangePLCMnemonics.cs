@@ -1,5 +1,4 @@
-﻿using System.Collections; 
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 // © by NAIROLF
 // SPS-Mnemonik (E/A - I/Q) in "Adressen / Zuordnungslisten" einfach umschalten
@@ -8,6 +7,8 @@ using System.Windows.Forms;
 // --------------------------------------------------------------------------------------------
 // 2012-12-27   V1.0    NAIROLF Ersterstellung
 //#############################################################################################
+using Eplan.EplApi.ApplicationFramework;
+using Eplan.EplApi.Scripting;
 
 public class NAIROLF_ContextMenu_ChangePLCMnemonics
 {
@@ -51,7 +52,6 @@ public class NAIROLF_ContextMenu_ChangePLCMnemonics
                         break;
                     default:
                         return;
-                        break;
                 }                
 
                 try
