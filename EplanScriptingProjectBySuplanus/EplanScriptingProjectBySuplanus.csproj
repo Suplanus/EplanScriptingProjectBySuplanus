@@ -92,6 +92,7 @@
     <Compile Include="ExtendedSettings\ExtendedSettings.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GetProjectnameOnPostOpen\GetProjectnameOnPostOpen.cs" />
     <Compile Include="GetProjectProperty\GetProjectProperty.cs" />
     <Compile Include="InsertPageMacro\InsertPageMacro.cs" />
     <Compile Include="InterruptionPointConfigurator\InterruptionPointConfigurator.cs">
