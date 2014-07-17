@@ -140,10 +140,8 @@
     <Compile Include="DeciderClass\DeciderClass.cs" />
     <Compile Include="MultiLanguageString\MultiLanguageString.cs" />
     <Compile Include="UpdateProjectProperties\UpdateProjectProperties.cs" />
+    <Compile Include="XFREActionFrameOpen\XFREActionFrameOpenAction.cs" />
     <Compile Include="XPamTranslateDatabaseAction\XPamTranslateDatabaseAction.cs" />
-    <Compile Include="_TEST_ToggleNavigator\ToggleNavigator.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -154,9 +152,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="_TEST_ToggleNavigator\ToggleNavigator.resx">
-      <DependentUpon>ToggleNavigator.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Bookmarks\Documentation\Bookmarks Doku.pdf" />
     <None Include="InsertUniversalPart3D\Macros\Artikelplatzierung_%283D%29.ema" />
     <None Include="InsertUniversalPart3D\Macros\Schrankbauteil_%283D%29.ema" />
