@@ -103,6 +103,7 @@
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Get.cs" />
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Set.cs" />
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Settings.cs" />
+    <Compile Include="ScriptTest\ScriptTest.cs" />
     <Compile Include="TranslateLanguages\TranslateLanguages.cs" />
     <Compile Include="OpenProjectAndSetPartsDb\OpenProjectAndSetPartsDb.cs" />
     <Compile Include="PageChangeZoomAll\PageChangeZoomAll.cs" />
