@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using Eplan.EplApi.ApplicationFramework;
 using Eplan.EplApi.Base;
@@ -333,7 +334,7 @@ public class CustomPropertyEditor : System.Windows.Forms.Form
         if (File.Exists(FileIni))
         {
             livi.Items.Clear();
-            string[] lines = File.ReadAllLines(FileIni);
+            string[] lines = File.ReadAllLines(FileIni, Encoding.UTF8);
             foreach (string line in lines)
             {
                 string[] items = line.Split('\t');
