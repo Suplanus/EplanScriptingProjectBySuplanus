@@ -92,9 +92,16 @@
     <Compile Include="ExtendedSettings\ExtendedSettings.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GetCurrentScriptPath\GetCurrentScriptPath.cs" />
     <Compile Include="GetProjectnameOnPostOpen\GetProjectnameOnPostOpen.cs" />
     <Compile Include="GetProjectProperty\GetProjectProperty.cs" />
+    <Compile Include="InsertComment\InsertComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InsertPageMacro\InsertPageMacro.cs" />
+    <Compile Include="InsertUniversalPart3D\InsertUniversalPart3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InterruptionPointConfigurator\InterruptionPointConfigurator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +151,9 @@
     <Compile Include="UpdateProjectProperties\UpdateProjectProperties.cs" />
     <Compile Include="XFREActionFrameOpen\XFREActionFrameOpenAction.cs" />
     <Compile Include="XPamTranslateDatabaseAction\XPamTranslateDatabaseAction.cs" />
+    <EmbeddedResource Include="InsertUniversalPart3D\InsertUniversalPart3D.resx">
+      <DependentUpon>InsertUniversalPart3D.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -155,8 +165,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Bookmarks\Documentation\Bookmarks Doku.pdf" />
-    <None Include="InsertUniversalPart3D\Macros\Artikelplatzierung_%283D%29.ema" />
-    <None Include="InsertUniversalPart3D\Macros\Schrankbauteil_%283D%29.ema" />
+    <None Include="InsertUniversalPart3D\Macros\CabinetPart.ema" />
+    <None Include="InsertUniversalPart3D\Macros\PartPlacement.ema" />
     <None Include="InterruptionPointConfigurator\Macros\1pol-ganz.ema" />
     <None Include="InterruptionPointConfigurator\Macros\1pol-links.ema" />
     <None Include="InterruptionPointConfigurator\Macros\1pol-rechts.ema" />
@@ -209,7 +219,7 @@
     <Content Include="SetMacroBoxName\Toolbar\ems.jpg" />
     <Content Include="SetMacroBoxName\Toolbar\SetMacroBox.xml" />
     <Content Include="SettingsRemoveSelection\SettingsRemoveSelection.vb" />
-    <Content Include="UpdateMacro\UpdateMacro.vb" />
+    <Compile Include="UpdateMacro\UpdateMacro.cs" />
     <Content Include="Watermark\Watermark.vb" />
   </ItemGroup>
   <ItemGroup>
