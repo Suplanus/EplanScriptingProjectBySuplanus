@@ -92,6 +92,8 @@
     <Compile Include="ExtendedSettings\ExtendedSettings.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GetCurrentLoadedScripts\GetCurrentLoadedScripts.cs" />
+    <Compile Include="GetProjectLanguages\GetProjectLanguages.cs" />
     <Compile Include="GetCurrentScriptPath\GetCurrentScriptPath.cs" />
     <Compile Include="GetProjectnameOnPostOpen\GetProjectnameOnPostOpen.cs" />
     <Compile Include="GetProjectProperty\GetProjectProperty.cs" />
@@ -214,6 +216,8 @@
     <Content Include="CustomPropertyEditor\Example\10013.0.false.txt" />
     <Content Include="CustomPropertyEditor\Example\10014.0.true.txt" />
     <Content Include="ElkExportToDwg\ElkExportToDwg.vb" />
+    <Content Include="GetProjectProperty\GetProjectProperty_Scheme.xml" />
+    <Content Include="GetProjectProperty\GetProjectProperty_Template.xml" />
     <Content Include="PlcNavigatorReadressMenu\PlcNavigatorReadressMenu.vb" />
     <Content Include="SetMacroBoxName\Toolbar\ema.jpg" />
     <Content Include="SetMacroBoxName\Toolbar\ems.jpg" />
