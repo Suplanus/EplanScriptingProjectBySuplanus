@@ -1,24 +1,42 @@
-﻿using System;
-using System.Windows.Forms;
+﻿/* Usage
+    private static string GetCurrentScriptPath(string scriptName)
+    {
+        string value = null;
+        ActionCallingContext actionCallingContext = new ActionCallingContext();
+        actionCallingContext.AddParameter("scriptName", scriptName);
+        new CommandLineInterpreter().Execute("GetCurrentScriptPath", actionCallingContext);
+        actionCallingContext.GetParameter("value", ref value);
+        return value;
+    }
+*/
+
+using Eplan.EplApi.Base;
 using Eplan.EplApi.Scripting;
 
 namespace EplanScriptingProjectBySuplanus.GetCurrentScriptPath
 {
     public class GetCurrentScriptPath
     {
-        [Start]
-        public void GetActualScriptPathAbfragen()
+        [DeclareAction("GetCurrentScriptPath")]
+        public void Action(string scriptName, out string value)
         {
-            MessageBox.Show("Current script-path:" + Environment.NewLine + GetPath(),
-                "GetCurrentScriptPath", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+            Settings settings = new Settings();
+            var settingsUrlScripts = "STATION.EplanEplApiScriptGui.Scripts";
+            int countOfScripts = settings.GetCountOfValues(settingsUrlScripts);
+            for (int i = 0; i < countOfScripts; i++)
+            {
+                string scriptPath = settings.GetStringSetting(settingsUrlScripts, i);
+                if (scriptPath.EndsWith(@"\" + scriptName))
+                {
+                    // found
+                    value = scriptPath;
+                    return;
+                }
+            }
 
-        public string GetPath()
-        {
-            Eplan.EplApi.Base.Settings oSettings = new Eplan.EplApi.Base.Settings();
-            string path= oSettings.GetExpandedStringSetting(
-                "USER.FileSelection.1.PermamentSelection.FolderName", 0);
-            return path;
+            // not found
+            value = null;
+            return;
         }
     }
 }
