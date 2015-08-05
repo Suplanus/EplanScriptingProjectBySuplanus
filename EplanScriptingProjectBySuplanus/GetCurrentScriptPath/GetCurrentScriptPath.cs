@@ -10,31 +10,41 @@
     }
 */
 
+using System.IO;
 using Eplan.EplApi.Base;
 using Eplan.EplApi.Scripting;
 
 namespace EplanScriptingProjectBySuplanus.GetCurrentScriptPath
 {
-    public class GetCurrentScriptPath
+    class GetCurrentScriptPath
     {
         [DeclareAction("GetCurrentScriptPath")]
         public void Action(string scriptName, out string value)
         {
             Settings settings = new Settings();
+            string scriptPath = string.Empty;
+
+            // If script is loaded
             var settingsUrlScripts = "STATION.EplanEplApiScriptGui.Scripts";
             int countOfScripts = settings.GetCountOfValues(settingsUrlScripts);
             for (int i = 0; i < countOfScripts; i++)
             {
-                string scriptPath = settings.GetStringSetting(settingsUrlScripts, i);
+                scriptPath = settings.GetStringSetting(settingsUrlScripts, i);
                 if (scriptPath.EndsWith(@"\" + scriptName))
                 {
-                    // found
-                    value = scriptPath;
+                    value = Path.GetDirectoryName(scriptPath);
                     return;
                 }
             }
 
-            // not found
+            // If script is executed
+            if (settings.GetStringSetting("USER.FileSelection.1.PermamentSelection.Files.file1", 0) == scriptName)
+            {
+                value = settings.GetStringSetting("USER.FileSelection.1.PermamentSelection.FolderName", 0);
+                return;
+            }
+
+            // Not found
             value = null;
             return;
         }
