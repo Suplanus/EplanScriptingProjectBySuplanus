@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+ <CAT name="USER">
+  <MOD name="Labelling">
+   <LEV1 name="Config">
+    <LEV2 name="GetProjectProperty">
+     <Setting name="Description" ver="1" type="mlstring">
+      <Default>
+       <Val/>
+      </Default>
+      <Val/>
+     </Setting>
+     <Setting name="Name" ver="1" type="mlstring">
+      <Default>
+       <Val/>
+      </Default>
+      <Val>??_??@GetProjectProperty;</Val>
+     </Setting>
+     <Setting name="ReadOnly" ver="1" type="bool">
+      <Default>
+       <Val/>
+      </Default>
+      <Val/>
+     </Setting>
+     <LEV3 name="Data">
+      <Setting name="DocumentTypeID" ver="1" type="int">
+       <Default>
+        <Val/>
+       </Default>
+       <Val>14</Val>
+      </Setting>
+      <Setting name="SameBlockOppress" ver="1" type="int">
+       <Default>
+        <Val/>
+       </Default>
+      </Setting>
+      <Setting name="TemplateAction" ver="1" type="string">
+       <Default>
+        <Val/>
+       </Default>
+      </Setting>
+      <LEV4 name="Article">
+       <Setting name="DissectAssemblies" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="DissectAssembliesLevel" ver="1" type="int">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <Setting name="DissectModules" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeBusbarConnectorParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeBusbarParts" ver="1" type="bool">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <Setting name="IncludeCableConnectionParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeCableParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeCableProjectParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeClampParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeConnectionParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeDeviceTagsWithoutPartNumber" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludePinAndJackParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludePlanningParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludePlugStripParts" ver="1" type="bool">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <Setting name="IncludePpeHookUpParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludePpeSpecificationParts" ver="1" type="bool">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="IncludeTerminalStripParts" ver="1" type="bool">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <Setting name="SummarizePartsOfSameDT" ver="1" type="bool">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+      </LEV4>
+      <LEV4 name="Export">
+       <Setting name="CharCode" ver="1" type="int">
+        <Default>
+         <Val/>
+        </Default>
+        <Val>2</Val>
+       </Setting>
+       <Setting name="CharacterCount" ver="1" type="int">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <Setting name="CharacterType" ver="1" type="int">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="ColumnDescription" ver="1" type="int">
+        <Default>
+         <Val/>
+        </Default>
+        <Val/>
+       </Setting>
+       <Setting name="Editor" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="Separator" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="UmlautIf" ver="1" type="int">
+        <Default>
+         <Val/>
+        </Default>
+        <Val>1</Val>
+       </Setting>
+      </LEV4>
+      <LEV4 name="File">
+       <Setting name="Destination" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+        <Val/>
+       </Setting>
+       <Setting name="Format" ver="1" type="string">
+        <Default>
+         <Val>XmlLblTextExportConverterImpl</Val>
+        </Default>
+        <Val>XmlLblTextExportConverterImpl</Val>
+       </Setting>
+       <Setting name="Template" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+        <Val/>
+       </Setting>
+      </LEV4>
+      <LEV4 name="Footer">
+       <Setting name="OnEachPage" ver="1" type="bool">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+      </LEV4>
+      <LEV4 name="Header">
+       <Setting name="OnEachPage" ver="1" type="bool">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <LEV5 name="FormatElements">
+        <Setting name="Element" ver="1" type="int">
+         <Default>
+          <Val/>
+         </Default>
+         <Val>1</Val>
+        </Setting>
+        <Setting name="ID" ver="1" type="int">
+         <Default>
+          <Val/>
+         </Default>
+         <Val/>
+        </Setting>
+        <LEV6 name="PropertyPack0">
+         <Setting name="Length" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>32</Val>
+         </Setting>
+         <Setting name="LengthType" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="PHGroupType" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>-1</Val>
+         </Setting>
+         <Setting name="PHType" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="PrecisionId" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>2</Val>
+         </Setting>
+         <Setting name="PrecisionVariable" ver="1" type="bool">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="RelationId" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="RelationIndex" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="RelationName" ver="1" type="string">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>Projekteigenschaften</Val>
+         </Setting>
+         <Setting name="RelationSeparator" ver="1" type="string">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="RightAlign" ver="1" type="bool">
+          <Default>
+           <Val>1</Val>
+          </Default>
+          <Val>1</Val>
+         </Setting>
+         <Setting name="SelectedPropertyId" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>10901</Val>
+         </Setting>
+		 <Setting name="SelectedPropertyIndex" ver="1" type="int">
+		  <Default>
+			<Val/>
+		  </Default>
+		  <Val>2</Val>
+		 </Setting>
+         <Setting name="Settings" ver="1" type="string">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>[10901&lt;...&gt;]</Val>
+         </Setting>
+         <Setting name="SumInLine" ver="1" type="bool">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="Symbol" ver="1" type="string">
+          <Default>
+           <Val/>
+          </Default>
+          <Val>P10901</Val>
+         </Setting>
+         <Setting name="Unit" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="UnitFormatFlags" ver="1" type="int">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+         <Setting name="WithLineFeeds" ver="1" type="bool">
+          <Default>
+           <Val/>
+          </Default>
+          <Val/>
+         </Setting>
+        </LEV6>
+       </LEV5>
+      </LEV4>
+      <LEV4 name="Record">
+       <Setting name="NrLinePerPage" ver="1" type="int">
+        <Default>
+         <Val>1000</Val>
+        </Default>
+       </Setting>
+       <Setting name="NrRecPerLine" ver="1" type="int">
+        <Default>
+         <Val>1</Val>
+        </Default>
+       </Setting>
+       <Setting name="RecSeparator" ver="1" type="string">
+        <Default>
+         <Val>;</Val>
+        </Default>
+       </Setting>
+      </LEV4>
+      <LEV4 name="SortFilter">
+       <Setting name="FilterSchemeData" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="FilterSchemeName" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="SortSchemeData" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="SortSchemeName" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="SubFilterSchemeData" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="SubFilterSchemeName" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="SubSortSchemeData" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+       <Setting name="SubSortSchemeName" ver="1" type="string">
+        <Default>
+         <Val/>
+        </Default>
+       </Setting>
+      </LEV4>
+     </LEV3>
+    </LEV2>
+   </LEV1>
+  </MOD>
+ </CAT>
+</Settings>
