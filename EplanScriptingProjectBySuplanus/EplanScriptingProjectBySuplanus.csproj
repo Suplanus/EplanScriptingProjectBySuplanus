@@ -76,6 +76,7 @@
     <Compile Include="AutomaticGeneratingConnections\AutomaticGeneratingConnections.cs" />
     <Compile Include="BackupOnClosingProjects\BackupOnClosingProject.cs" />
     <Compile Include="ChangePLCMnemonics\ChangePLCMnemonics.cs" />
+    <Compile Include="ConnectionPointDesignationReverse\ConnectionPointDesignationReverse.cs" />
     <Compile Include="CopyMode\CopyMode.cs" />
     <Compile Include="CustomPropertyEditor\CustomPropertyEditor.cs">
       <SubType>Form</SubType>
