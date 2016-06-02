@@ -115,6 +115,7 @@
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Settings.cs" />
     <Compile Include="PlaceHolderTranslateAction\PlaceHolderTranslateAction.cs" />
     <Compile Include="ScriptTest\ScriptTest.cs" />
+    <Compile Include="ToggleDeviceTag\ToggleDeviceTag.cs" />
     <Compile Include="TranslateLanguages\TranslateLanguages.cs" />
     <Compile Include="OpenProjectAndSetPartsDb\OpenProjectAndSetPartsDb.cs" />
     <Compile Include="PageChangeZoomAll\PageChangeZoomAll.cs" />
@@ -226,6 +227,10 @@
     <Content Include="SetMacroBoxName\Toolbar\SetMacroBox.xml" />
     <Content Include="SettingsRemoveSelection\SettingsRemoveSelection.vb" />
     <Compile Include="UpdateMacro\UpdateMacro.cs" />
+    <Content Include="ToggleDeviceTag\Images\Toolbar\DTAddNewLine.jpg" />
+    <Content Include="ToggleDeviceTag\Images\Toolbar\DTRemoveNewLine.jpg" />
+    <Content Include="ToggleDeviceTag\Schemes\PXex.ESS_MacroScriptHelper_MultiLine_DT.xml" />
+    <Content Include="ToggleDeviceTag\XML\Toolbar_ESS_DeviceTagTool.xml" />
     <Content Include="Watermark\Watermark.vb" />
   </ItemGroup>
   <ItemGroup>

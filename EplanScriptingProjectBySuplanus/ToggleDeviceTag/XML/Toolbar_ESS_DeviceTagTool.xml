@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings format="2">
+ <CAT name="USER">
+  <MOD name="TOOLBARS">
+   <LEV1 name="TOOLBAR-0">
+    <LEV2 name="AdditionalToolbars">
+     <LEV3 name="AdditionalToolbar-0">
+      <Setting name="Action" type="string">
+       <Val>ESS_Toggle_DeviceTag /MODE:ADD</Val>
+      </Setting>
+      <Setting name="ID" type="unsigned int">
+       <Val>48817</Val>
+      </Setting>
+      <Setting name="PictureFile" type="string">
+       <Val>$(MD_IMG)\Toolbar\DTAddNewLine.jpg</Val>
+      </Setting>
+      <Setting name="Tooltip" type="string">
+       <Val>BMK (sichtbar): Zeilenumbruch ¶ hinzufügen</Val>
+      </Setting>
+     </LEV3>
+     <LEV3 name="AdditionalToolbar-1">
+      <Setting name="Action" type="string">
+       <Val>ESS_Toggle_DeviceTag /MODE:REMOVE</Val>
+      </Setting>
+      <Setting name="ID" type="unsigned int">
+       <Val>48818</Val>
+      </Setting>
+      <Setting name="PictureFile" type="string">
+       <Val>$(MD_IMG)\Toolbar\DTRemoveNewLine.jpg</Val>
+      </Setting>
+      <Setting name="Tooltip" type="string">
+       <Val>BMK (sichtbar): Zeilenumbruch ¶ entfernen</Val>
+      </Setting>
+     </LEV3>
+    </LEV2>
+    <LEV2 name="BARDATA">
+     <LEV3 name="ToolBarInfoEx">
+      <Setting name="Buttons" type="string">
+       <Val>BLOLAAAAAACLOLAAAAAA</Val>
+      </Setting>
+      <Setting name="Title" type="string">
+       <Val>ESS_DeviceTagTool</Val>
+      </Setting>
+     </LEV3>
+    </LEV2>
+   </LEV1>
+  </MOD>
+ </CAT>
+</Settings>

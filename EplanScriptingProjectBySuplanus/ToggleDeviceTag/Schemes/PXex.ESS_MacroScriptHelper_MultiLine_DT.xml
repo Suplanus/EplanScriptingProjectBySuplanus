@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- MacrosGui_USER_PXF_Export_Schemes: PXex.[ESS]_MacroScriptHelper_MultiLine_DT.xml -->
+<Settings format="2">
+ <CAT name="USER">
+  <MOD name="MacrosGui">
+   <LEV1 name="PXF">
+    <LEV2 name="Export">
+     <LEV3 name="Schemes" nodekind="scheme">
+      <LEV4 name="[ESS]_MacroScriptHelper_MultiLine_DT">
+       <LEV5 name="Data" nodekind="block">
+        <LEV6 name="Export">
+         <Setting name="ColumnDescription" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="Editor" type="string">
+          <Val/>
+         </Setting>
+        </LEV6>
+        <Setting name="FctCategory" type="int">
+         <Val>-3</Val>
+        </Setting>
+        <LEV6 name="File">
+         <Setting name="Destination" type="string">
+          <Val>$(TMP)\TMP_Toggle_DT.txt</Val>
+         </Setting>
+         <Setting name="Format" type="string">
+          <Val>XPxfConverterTextUnicodeImpl</Val>
+         </Setting>
+         <Setting name="Template" type="string">
+          <Val/>
+         </Setting>
+        </LEV6>
+        <LEV6 name="Properties">
+         <Setting name="ID" type="int">
+          <Val>20010</Val>
+         </Setting>
+         <Setting name="Index" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="IsDataId" type="bool">
+          <Val>0</Val>
+         </Setting>
+        </LEV6>
+       </LEV5>
+       <Setting name="Description" type="mlstring">
+        <Val/>
+       </Setting>
+       <Setting name="Name" type="mlstring">
+        <Val>??_??@[ESS]_MacroScriptHelper_MultiLine_DT;</Val>
+       </Setting>
+       <Setting name="ReadOnly" type="bool">
+        <Val>0</Val>
+       </Setting>
+      </LEV4>
+     </LEV3>
+    </LEV2>
+   </LEV1>
+  </MOD>
+ </CAT>
+</Settings>
