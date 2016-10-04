@@ -113,6 +113,7 @@
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Get.cs" />
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Set.cs" />
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Settings.cs" />
+    <Compile Include="PlaceHolderMultiAddRecord\PlaceHolderMultiAddRecord.cs" />
     <Compile Include="PlaceHolderTranslateAction\PlaceHolderTranslateAction.cs" />
     <Compile Include="ScriptTest\ScriptTest.cs" />
     <Compile Include="ToggleDeviceTag\ToggleDeviceTag.cs" />
