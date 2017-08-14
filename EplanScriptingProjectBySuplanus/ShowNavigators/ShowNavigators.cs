@@ -26,15 +26,14 @@ namespace EplanScriptingProjectBySuplanus.ShowNavigators
             {
                 // Get values
                 var splitNavigators = splitGroup.Split(';');
-                if (splitNavigators.Length != 3)
+                if (splitNavigators.Length != 2)
                 {
                     MessageBox.Show("Invalid parameter", "ShowNavigators - Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
 
-                string action = splitNavigators[0];
-                string navigatorName = splitNavigators[1];
-                string visibleText = splitNavigators[2].ToUpper();
+                string navigatorName = splitNavigators[0];
+                string visibleText = splitNavigators[1].ToUpper();
                 bool visible = visibleText == "TRUE" || visibleText == "1";
 
                 // Settings path e.g.: USER.WORKSPACE.NAMED.dummy.Data.Visibility.XMacroPdd
@@ -46,7 +45,7 @@ namespace EplanScriptingProjectBySuplanus.ShowNavigators
                     // Show
                     if (!settings.ExistSetting(settingsPath))
                     {
-                        commandLineInterpreter.Execute(action);
+                        commandLineInterpreter.Execute("GfDialogManagerShow /DialogName:" + navigatorName);
                     }
                 }
                 else
@@ -54,7 +53,7 @@ namespace EplanScriptingProjectBySuplanus.ShowNavigators
                     // Hide
                     if (settings.ExistSetting(settingsPath))
                     {
-                        commandLineInterpreter.Execute(action);
+                        commandLineInterpreter.Execute("GfDialogManagerHide /DialogName:" + navigatorName);
                     }
                 }
             }
