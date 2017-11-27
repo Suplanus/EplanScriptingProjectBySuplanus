@@ -8,60 +8,64 @@
         return value;
     }
 */
+
 using System.IO;
 using System.Xml;
 using Eplan.EplApi.ApplicationFramework;
 using Eplan.EplApi.Base;
 using Eplan.EplApi.Scripting;
 
-public class GetVarLanguage
+namespace EplanScriptingProjectBySuplanus.GetVarLanguage
 {
-    [DeclareAction("GetVarLanguage")]
-    public void Action(out string value)
+    public class GetVarLanguage
     {
-        // Get language from settings
-        string tempFile = Path.Combine(PathMap.SubstitutePath("$(TMP)"), "GetVarLanguage.xml");
-
-        ActionCallingContext actionCallingContext = new ActionCallingContext();
-        actionCallingContext.AddParameter("prj", FullProjectPath());
-        actionCallingContext.AddParameter("node", "TRANSLATEGUI");
-        actionCallingContext.AddParameter("XMLFile", tempFile);
-        new CommandLineInterpreter().Execute("XSettingsExport", actionCallingContext);
-
-        // Needed because there is no direct access to setting
-        string language = GetValueSettingsXml(tempFile, "/Settings/CAT/MOD/Setting[@name='VAR_LANGUAGE']/Val");
-
-        // If setting is GUI language, return the GUI language
-        if (language == "##_##")
+        [DeclareAction("GetVarLanguage")]
+        public void Action(out string value)
         {
-            language = new Languages().GuiLanguage.GetString();
+            // Get language from settings
+            string tempFile = Path.Combine(PathMap.SubstitutePath("$(TMP)"), "GetVarLanguage.xml");
+
+            ActionCallingContext actionCallingContext = new ActionCallingContext();
+            actionCallingContext.AddParameter("prj", FullProjectPath());
+            actionCallingContext.AddParameter("node", "TRANSLATEGUI");
+            actionCallingContext.AddParameter("XMLFile", tempFile);
+            new CommandLineInterpreter().Execute("XSettingsExport", actionCallingContext);
+
+            // Needed because there is no direct access to setting
+            string language = GetValueSettingsXml(tempFile, "/Settings/CAT/MOD/Setting[@name='VAR_LANGUAGE']/Val");
+
+            // If setting is GUI language, return the GUI language
+            if (language == "##_##")
+            {
+                language = new Languages().GuiLanguage.GetString();
+            }
+
+            value = language;
         }
 
-        value = language;
-    }
-
-    private static string GetValueSettingsXml(string filename, string url)
-    {
-        XmlDocument xmlDocument = new XmlDocument();
-        xmlDocument.Load(filename);
-        XmlNodeList rankListSchemaName = xmlDocument.SelectNodes(url);
-        if (rankListSchemaName != null && rankListSchemaName.Count > 0)
+        private static string GetValueSettingsXml(string filename, string url)
         {
-            string value = rankListSchemaName[0].InnerText;
-            return value;
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(filename);
+            XmlNodeList rankListSchemaName = xmlDocument.SelectNodes(url);
+            if (rankListSchemaName != null && rankListSchemaName.Count > 0)
+            {
+                string value = rankListSchemaName[0].InnerText;
+                return value;
+            }
+            return null;
         }
-        return null;
-    }
 
-    private static string FullProjectPath()
-    {
-        ActionCallingContext acc = new ActionCallingContext();
-        acc.AddParameter("TYPE", "PROJECT");
+        private static string FullProjectPath()
+        {
+            ActionCallingContext acc = new ActionCallingContext();
+            acc.AddParameter("TYPE", "PROJECT");
 
-        string projectPath = string.Empty;
-        new CommandLineInterpreter().Execute("selectionset", acc);
-        acc.GetParameter("PROJECT", ref projectPath);
+            string projectPath = string.Empty;
+            new CommandLineInterpreter().Execute("selectionset", acc);
+            acc.GetParameter("PROJECT", ref projectPath);
 
-        return projectPath;
+            return projectPath;
+        }
     }
 }
