@@ -110,6 +110,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoadUnloadAllScripts\LoadUnloadAllScripts.cs" />
+    <Compile Include="LocationPrint\LocationPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MacrosInstallationSpaceContextMenu\MacrosInstallationSpaceContextMenu.cs" />
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Get.cs" />
     <Compile Include="MultilanguageToolExamples\MultilanguageToolExamples_Set.cs" />
@@ -195,6 +198,9 @@
     <None Include="InterruptionPointConfigurator\Macros\5pol-links.ema" />
     <None Include="InterruptionPointConfigurator\Macros\5pol-rechts.ema" />
     <None Include="InterruptionPointConfigurator\Macros\5pol.ema" />
+    <None Include="LocationPrint\Beschreibung.pdf" />
+    <None Include="LocationPrint\Icon\Thumbs.db" />
+    <None Include="LocationPrint\Images\Thumbs.db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -224,6 +230,15 @@
     <Content Include="ElkExportToDwg\ElkExportToDwg.vb" />
     <Content Include="GetProjectProperty\GetProjectProperty_Scheme.xml" />
     <Content Include="GetProjectProperty\GetProjectProperty_Template.xml" />
+    <Content Include="LocationPrint\Icon\LocationPrint.bmp" />
+    <Content Include="LocationPrint\Schemes\FGfiDL.[LocationPrint]GetAllLocationSitesFilter.xml" />
+    <Content Include="LocationPrint\Schemes\FGfiSO.[LocationPrint]Einbauorte.xml" />
+    <Content Include="LocationPrint\Schemes\FGfiT.[LocationPrint]GetAllSitesFilter.xml" />
+    <Content Include="LocationPrint\Schemes\[ChangedPagesPrint]GetAllPages.xml" />
+    <Content Include="LocationPrint\Schemes\[LocationPrint]GetAllLocations.xml" />
+    <Content Include="LocationPrint\Schemes\[LocationPrint]GetAllLocationSites.xml" />
+    <Content Include="LocationPrint\Schemes\[LocationPrint]GetAllLocationSitesTemp.xml" />
+    <Content Include="LocationPrint\Schemes\[LocationPrint]GetAllSites.xml" />
     <Content Include="PlcNavigatorReadressMenu\PlcNavigatorReadressMenu.vb" />
     <Content Include="SetMacroBoxName\Toolbar\ema.jpg" />
     <Content Include="SetMacroBoxName\Toolbar\ems.jpg" />

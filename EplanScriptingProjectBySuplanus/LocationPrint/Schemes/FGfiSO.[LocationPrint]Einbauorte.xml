@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- FormGeneratorGui_USER_FilterScheme_PxfForm_STRUCTIDENTIFIEROVERVIEW: FGfiSO.[LocationPrint]Einbauorte.xml -->
+<Settings format="2">
+ <CAT name="USER">
+  <MOD name="FormGeneratorGui">
+   <LEV1 name="FilterScheme">
+    <LEV2 name="PxfForm_STRUCTIDENTIFIEROVERVIEW" nodekind="scheme">
+     <LEV3 name="[LocationPrint]Einbauorte">
+      <LEV4 name="Data" nodekind="block">
+       <Setting name="Activ" type="bool">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="CriteriaType" type="int">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="IgnoreCase" type="bool">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="Negation" type="bool">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="Operator" type="int">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="PropDescr" type="string">
+        <Val>1006;0</Val>
+       </Setting>
+       <Setting name="QuickFilter" type="bool">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="RelationDescr" type="string">
+        <Val>0;0</Val>
+       </Setting>
+       <Setting name="SingleValue" type="bool">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="UseWildcards" type="bool">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="Value" type="string">
+        <Val>10004</Val>
+       </Setting>
+       <Setting name="WholeText" type="bool">
+        <Val>1</Val>
+       </Setting>
+      </LEV4>
+      <Setting name="Description" type="mlstring">
+       <Val>??_??@[LocationPrint]Einbauorte;</Val>
+      </Setting>
+      <Setting name="Name" type="mlstring">
+       <Val>??_??@[LocationPrint]Einbauorte;</Val>
+      </Setting>
+      <Setting name="ReadOnly" type="bool">
+       <Val>0</Val>
+      </Setting>
+     </LEV3>
+    </LEV2>
+   </LEV1>
+  </MOD>
+ </CAT>
+</Settings>

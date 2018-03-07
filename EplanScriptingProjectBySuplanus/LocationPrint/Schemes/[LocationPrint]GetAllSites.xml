@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Labelling_USER_Config: LB.[LocationPrint]GetAllSites.xml -->
+<Settings format="2">
+ <CAT name="USER">
+  <MOD name="Labelling">
+   <LEV1 name="Config" nodekind="scheme">
+    <LEV2 name="[LocationPrint]GetAllSites">
+     <LEV3 name="Data" nodekind="block">
+      <LEV4 name="Article">
+       <Setting name="DissectAssemblies" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="DissectAssembliesLevel" type="int">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="DissectModules" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeBusbarConnectorParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeBusbarParts" type="bool">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="IncludeCableConnectionParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeCableParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeCableProjectParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeClampParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeConnectionParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeDeviceTagsWithoutPartNumber" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeHarnessAssemblyParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludeHarnessMainPart" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludePinAndJackParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludePlanningParts" type="bool">
+        <Val/>
+       </Setting>
+       <Setting name="IncludePlugStripParts" type="bool">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="IncludePpeHookUpParts" type="bool">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="IncludePpeSpecificationParts" type="bool">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="IncludeTerminalStripParts" type="bool">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="SummarizePartsOfSameDT" type="bool">
+        <Val>1</Val>
+       </Setting>
+      </LEV4>
+      <Setting name="DocumentTypeID" type="int">
+       <Val>14</Val>
+      </Setting>
+      <LEV4 name="Export">
+       <Setting name="CharCode" type="int">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="CharacterCount" type="int">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="CharacterType" type="int">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="ColumnDescription" type="int">
+        <Val>0</Val>
+       </Setting>
+       <Setting name="Editor" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="Separator" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="UmlautIf" type="int">
+        <Val>0</Val>
+       </Setting>
+      </LEV4>
+      <LEV4 name="File">
+       <Setting name="Destination" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="Format" type="string">
+        <Val>XmlLblTextExportConverterImpl</Val>
+       </Setting>
+       <Setting name="Template" type="string">
+        <Val/>
+       </Setting>
+      </LEV4>
+      <LEV4 name="Footer">
+       <Setting name="OnEachPage" type="bool">
+        <Val>1</Val>
+       </Setting>
+      </LEV4>
+      <LEV4 name="Header">
+       <Setting name="OnEachPage" type="bool">
+        <Val>1</Val>
+       </Setting>
+      </LEV4>
+      <LEV4 name="Record">
+       <LEV5 name="FormatElements">
+        <Setting name="Element" type="int">
+         <Val>1</Val>
+        </Setting>
+        <Setting name="ID" type="int">
+         <Val>0</Val>
+        </Setting>
+        <LEV6 name="PropertyPack0">
+         <Setting name="Length" type="int">
+          <Val>32</Val>
+         </Setting>
+         <Setting name="LengthType" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="PHGroupType" type="int">
+          <Val>-1</Val>
+         </Setting>
+         <Setting name="PHType" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="PrecisionId" type="int">
+          <Val>2</Val>
+         </Setting>
+         <Setting name="PrecisionVariable" type="bool">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="RelationId" type="int">
+          <Val>20000</Val>
+         </Setting>
+         <Setting name="RelationIndex" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="RelationName" type="string">
+          <Val>Seite</Val>
+         </Setting>
+         <Setting name="RelationSeparator" type="string">
+          <Val/>
+         </Setting>
+         <Setting name="RightAlign" type="bool">
+          <Val>1</Val>
+         </Setting>
+         <Setting name="SelectedPropertyId" type="int">
+          <Val>11009</Val>
+         </Setting>
+         <Setting name="SelectedPropertyIndex" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="Settings" type="string">
+          <Val>[11009&lt;...&gt;]</Val>
+         </Setting>
+         <Setting name="SumInLine" type="bool">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="Symbol" type="string">
+          <Val>P11009</Val>
+         </Setting>
+         <Setting name="Unit" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="UnitFormatFlags" type="int">
+          <Val>0</Val>
+         </Setting>
+         <Setting name="WithLineFeeds" type="bool">
+          <Val>0</Val>
+         </Setting>
+        </LEV6>
+       </LEV5>
+       <Setting name="NrLinePerPage" type="int">
+        <Val>1000</Val>
+       </Setting>
+       <Setting name="NrRecPerLine" type="int">
+        <Val>1</Val>
+       </Setting>
+       <Setting name="RecSeparator" type="string">
+        <Val>;</Val>
+       </Setting>
+      </LEV4>
+      <Setting name="SameBlockOppress" type="int">
+       <Val>0</Val>
+      </Setting>
+      <LEV4 name="SortFilter">
+       <Setting name="FilterSchemeData" type="string">
+        <Val>0|1|0|11029;0|0|1;2;3;7;8|0|1|1|0|0|0;0|</Val>
+       </Setting>
+       <Setting name="FilterSchemeName" type="string">
+        <Val>[LocationPrint]GetAllSitesFilter</Val>
+       </Setting>
+       <Setting name="SortSchemeData" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="SortSchemeName" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="SubFilterSchemeData" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="SubFilterSchemeName" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="SubSortSchemeData" type="string">
+        <Val/>
+       </Setting>
+       <Setting name="SubSortSchemeName" type="string">
+        <Val/>
+       </Setting>
+      </LEV4>
+      <Setting name="TemplateAction" type="string">
+       <Val/>
+      </Setting>
+     </LEV3>
+     <Setting name="Description" type="mlstring">
+      <Val>??_??@[LocationPrint]GetAllSites;</Val>
+     </Setting>
+     <Setting name="Name" type="mlstring">
+      <Val>??_??@[LocationPrint]GetAllSites;</Val>
+     </Setting>
+     <Setting name="ReadOnly" type="bool">
+      <Val>0</Val>
+     </Setting>
+    </LEV2>
+   </LEV1>
+  </MOD>
+ </CAT>
+</Settings>
