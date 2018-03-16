@@ -90,6 +90,7 @@
     <Compile Include="ExecuteEplanAction\ExecuteEplanAction.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ExtendedActionList\ExtendedActionList.cs" />
     <Compile Include="ExtendedSettings\ExtendedSettings.cs">
       <SubType>Form</SubType>
     </Compile>
