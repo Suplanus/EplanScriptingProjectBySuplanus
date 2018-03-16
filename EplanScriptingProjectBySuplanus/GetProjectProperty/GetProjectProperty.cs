@@ -67,7 +67,6 @@ namespace EplanScriptingProjectBySuplanus.GetProjectProperty
           content = content.Replace("IsSelectedPropertyIdUserDef", "");
           content = content.Replace("GetProjectProperty_INDEX", index);
           content = content.Replace("GetProjectProperty_ID", id);
-
         }
 
         File.WriteAllText(pathScheme, content);
