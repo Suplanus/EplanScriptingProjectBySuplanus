@@ -133,7 +133,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PrintPages\PrintPages.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="ProjectHistory\ProjectHistory.cs">
       <SubType>Form</SubType>
     </Compile>
