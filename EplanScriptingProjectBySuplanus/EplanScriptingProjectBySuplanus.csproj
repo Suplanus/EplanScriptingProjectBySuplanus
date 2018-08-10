@@ -122,6 +122,7 @@
     <Compile Include="PlaceHolderMultiAddRecord\PlaceHolderMultiAddRecord.cs" />
     <Compile Include="PlaceHolderTranslateAction\PlaceHolderTranslateAction.cs" />
     <Compile Include="ScriptTest\ScriptTest.cs" />
+    <Compile Include="SendPdfEmail\SendPdfEmail.cs" />
     <Compile Include="ShowNavigators\ShowNavigators.cs" />
     <Compile Include="ToggleDeviceTag\ToggleDeviceTag.cs" />
     <Compile Include="TranslateLanguages\TranslateLanguages.cs" />
